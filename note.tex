@@ -1,0 +1,521 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={A Jordan obstruction and generic irreducibility for Long--Moody braid representations},
+pdfauthor={Haobo Ma and Wenlin Zhang}}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Rcal}{\mathcal R}
+\newcommand{\Tcal}{\mathcal T}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Bur}{\mathrm{Bur}^{\mathrm{red}}}
+\title{A Jordan obstruction and generic irreducibility\\
+for Long--Moody braid representations}
+\author{Haobo Ma\thanks{ChronoAI Pte Ltd; The Omega Institute.}
+\and Wenlin Zhang\thanks{National University of Singapore; The Omega Institute.}}
+\date{10 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We resolve the Jones--Temperley--Lieb Jordan-obstruction clause of
+Negami's Problem~6.8 and extend its generic irreducibility result to
+$n=5$. For every untwisted endpoint-sector seed of dimension at least
+two, with $n\ge3$ and $\ell\ge4$, an explicit four-dimensional block
+contains a nontrivial length-two Jordan chain. The chain survives every
+admissible middle-convolution quotient, so both braid images are
+unbounded and admit no positive-definite invariant Hermitian form.
+For the separate character-twisted Burau family, an exact minor of order
+$893$ proves generic irreducibility of the twenty-dimensional summand
+$\Rcal_5$ in the positive parameter region. We construct an invariant
+$10+10$ splitting along the entire admissible diagonal $\tau=q$ and
+prove that every ambient minor of order $893$ is divisible by
+$(\tau-q)^3$. Exact cyclotomic certificates establish irreducibility at
+$95$ off-diagonal points and identify the two irreducible constituents
+at seven diagonal points.
+\end{abstract}
+
+\section{The construction and the two questions}
+
+Negami constructs braid representations from character-twisted Burau
+seeds and asks in \cite[Problem~6.8]{Negami} for the remaining
+irreducibility locus, the image closure on irreducible sectors, and
+an exact Jordan obstruction for the Jones--Temperley--Lieb seeds of
+\cite[Remark~6.7(b)]{Negami}. We prove the Jordan obstruction uniformly
+in the endpoint sector, including its survival on the convolution
+quotient. For the Burau family we extend
+\cite[Proposition~5.10]{Negami} from $n=3,4$ to $n=5$ and determine an
+explicit reducibility curve. These are two different seed families.
+
+We use the conventions of \cite[Definition~1.3 and Definitions~1.4--1.7]{Negami}.
+A seed consists of invertible operators $g_1,\ldots,g_n$ and
+$s_1,\ldots,s_{n-1}$ on a vector space $V$ satisfying the seed
+relations (the braid and Artin compatibility relations of Definition~1.3).
+The ambient
+Long--Moody module is $U=V^{\oplus n}$. Its braid generator $S_i$
+acts by $s_i$ on every slot other than $i,i+1$, and
+\begin{equation}\label{eq:S}
+ (S_iv)_i=s_ig_iv_{i+1},\qquad
+ (S_iv)_{i+1}=s_i\bigl(v_i+(I-g_{i+1})v_{i+1}\bigr).
+\end{equation}
+The middle-convolution module, for $\lambda\in\C\setminus\{0,1\}$, is
+\[
+ Q_\lambda=U/(K_{\rm seed}+L_\lambda),\qquad
+ K_{\rm seed}=\bigoplus_{j=1}^n\ker(g_j-I),
+\]
+where, with $P_n=g_1\cdots g_n$,
+\begin{equation}\label{eq:L}
+ L_\lambda=\{z:z_j=g_{j+1}z_{j+1}\ (1\le j<n),\quad
+                    z_n=\lambda P_nz_n\}.
+\end{equation}
+These subspaces are braid invariant. The operators in \eqref{eq:S}
+are independent of $\lambda$ \cite[Proposition~2.3]{Negami}.
+
+\section{The endpoint-sector Jordan obstruction}
+
+Fix integers $n\ge3$ and $\ell\ge4$. An endpoint sector $V$ has an
+orthonormal basis indexed by paths
+$p=(p_0,\ldots,p_{n+1})$ on $A_{\ell-1}$, with vertices
+$1,\ldots,\ell-1$, $p_0=1$, and a fixed terminal vertex.
+Consecutive vertices differ by one. Set
+\[
+ \theta=\pi/\ell,\qquad \mu_c=\sin(c\theta),\qquad
+ \delta=2\cos\theta,\qquad
+ \alpha=i e^{-i\theta/2},\qquad b=-\alpha^{-3}.
+\]
+The operator $E_j$, $0\le j<n$, changes vertex $j+1$ only.
+Its entry from a path $r$ to a path $p$ is zero unless the paths
+agree away from $j+1$ and $p_j=p_{j+2}$; otherwise
+\begin{equation}\label{eq:E}
+ (E_j)_{p,r}=
+ \frac{\sqrt{\mu_{p_{j+1}}\mu_{r_{j+1}}}}{\mu_{p_j}}.
+\end{equation}
+The untwisted normalization of \cite[Remark~6.7(b)]{Negami} is
+\[
+ \rho_j=\alpha I+\alpha^{-1}E_j,\qquad s_j=\rho_j,
+ \qquad g_1=\rho_0^2,\qquad
+ g_{j+1}=\rho_jg_j\rho_j^{-1}.
+\]
+
+\begin{theorem}\label{thm:jordan}
+For every endpoint sector $V$ of dimension at least two,
+$K_{\rm seed}=0$, and there are $w,v\in U$ such that
+\[
+ (S_1-bI)w=v\ne0,\qquad (S_1-bI)v=0.
+\]
+The images of $w,v$ give the same nontrivial Jordan chain on
+$Q_\lambda$ for every $\lambda\in\C\setminus\{0,1\}$.
+Both the ambient and quotient braid images are unbounded and preserve
+no positive-definite Hermitian form.
+\end{theorem}
+
+\begin{proof}
+Put $\mu_0=\mu_\ell=0$. The sine addition formula gives
+$\mu_{c-1}+\mu_{c+1}=\delta\mu_c$, also at the boundary vertices.
+Every nonzero local block of $E_j$ is $uu^{\mathsf T}/\mu_c$,
+where $u_d=\sqrt{\mu_d}$ for neighbors $d$ of $c$. Thus
+$E_j^2=\delta E_j$. Since
+$\delta=-(\alpha^2+\alpha^{-2})$, we obtain
+\[
+ (\rho_j-\alpha I)(\rho_j+\alpha^{-3}I)=0,
+ \qquad (g_j-\alpha^2I)(g_j-\alpha^{-6}I)=0.
+\]
+The second identity follows first for $g_1$ by squaring, then for
+all $g_j$ by conjugation. The seed operators are invertible because
+the two roots $\alpha,-\alpha^{-3}$ are nonzero.
+Now $\alpha^2=-e^{-i\theta}$ and $\alpha^6=-e^{-3i\theta}$ have
+positive imaginary parts for $0<\theta\le\pi/4$.
+Consequently neither $\alpha^2$ nor $\alpha^{-6}$ is one.
+Applying the polynomial identity to a fixed vector of $g_j$ shows
+that it is zero, proving $K_{\rm seed}=0$.
+
+There is at most one strictly ascending path. Since the sector has
+at least two paths, some path has a downward step. At the first such
+step, delete the two-edge detour $c-1,c,c-1$ and prepend the loop
+$1,2,1$. This preserves length and endpoint and produces a path
+beginning $1,2,1,2$. Here the fourth vertex is present because
+$n+1\ge4$, and a step after vertex $1$ must go to $2$.
+Replacing the third vertex by $3$ gives a second legal path beginning
+$1,2,3,2$, since $\ell\ge4$. Denote these paths by $p,p'$;
+their tails agree. On their span,
+\[
+ E_0=\begin{pmatrix}\delta&0\\0&0\end{pmatrix},\qquad
+ E_1=\frac1{\mu_2}
+ \begin{pmatrix}\mu_1&\sqrt{\mu_1\mu_3}\\
+ \sqrt{\mu_1\mu_3}&\mu_3\end{pmatrix}.
+\]
+Put $f_0=e_p$ and $f_1=\alpha^2E_1f_0$.
+The coefficient of $e_{p'}$ in $f_1$ is nonzero, so $f_0,f_1$
+are independent. Using $\mu_2=\delta\mu_1$ gives
+$E_0f_1=\alpha^2f_0$ and $E_1f_1=\delta f_1$.
+In this basis the first two seed matrices are
+\begin{equation}\label{eq:RU}
+ R=\rho_0=\begin{pmatrix}-\alpha^{-3}&\alpha\\0&\alpha\end{pmatrix},
+ \qquad U=\rho_1=\begin{pmatrix}\alpha&0\\\alpha^{-3}&-\alpha^{-3}\end{pmatrix},
+ \qquad U^{-1}=\begin{pmatrix}\alpha^{-1}&0\\\alpha^{-1}&-\alpha^3\end{pmatrix}.
+\end{equation}
+Let $M$ be the four-dimensional space consisting of this span in
+slots $1,2$ and zero in all other slots. It is $S_1$ invariant, with
+\begin{equation}\label{eq:T}
+ T=S_1|_M=\begin{pmatrix}0&UG\\U&U(I-H)\end{pmatrix},
+ \qquad G=R^2,\qquad H=UGU^{-1}.
+\end{equation}
+In the order $(f_0,f_1)$ in slot $1$, then $(f_0,f_1)$ in slot $2$,
+put $d=\alpha^6-1$ and set
+\begin{equation}\label{eq:wv}
+ w=\begin{pmatrix}
+ -\alpha^5(\alpha^2+1)(\alpha^8-\alpha^6-\alpha^4-\alpha^2+1)\\
+ \alpha(2\alpha^6+\alpha^4-1)\\
+ -\alpha^{11}(\alpha^2+1)\\0
+ \end{pmatrix},\qquad
+ v=\begin{pmatrix}-\alpha^2(\alpha^4-1)d\\\alpha^{-2}d\\0\\d\end{pmatrix}.
+\end{equation}
+Multiplying the matrices in \eqref{eq:RU}--\eqref{eq:T} and
+collecting Laurent powers gives the identities
+\begin{equation}\label{eq:chain}
+ (T+\alpha^{-3}I)w=v,\qquad (T+\alpha^{-3}I)v=0
+\end{equation}
+for every nonzero $\alpha$. At the specified phase, $d\ne0$,
+so the last coordinate of $v$ is nonzero. Extension by zero to the
+remaining slots proves the ambient chain.
+
+If $z\in M\cap L_\lambda$, then $z_3=\cdots=z_n=0$.
+The recurrence in \eqref{eq:L} gives $z_2=g_3z_3=0$ and
+$z_1=g_2z_2=0$. Hence $M\cap L_\lambda=0$.
+Since $K_{\rm seed}=0$, the quotient map is injective on $M$,
+and \eqref{eq:chain} descends with $[v]\ne0$.
+This argument includes the parameters for which $L_\lambda\ne0$.
+
+Finally $|b|=1$, and for every integer $k\ge1$ the chain gives
+$S_1^kw=b^kw+kb^{k-1}v$. In any norm,
+\[
+ \|S_1^kw\|\ge k\|v\|-\|w\|\longrightarrow\infty.
+\]
+The same inequality holds on the quotient. An invariant positive-definite
+Hermitian form would make every power an isometry, a contradiction.
+\end{proof}
+
+All standard braid generators are conjugate, so each has the same
+Jordan obstruction. A
+\href{https://github.com/the-omega-institute/trureturing/blob/868ae8ef94f515b39323d972ccfd7120036bff79/D5/S3/Quantum/Algebra/JonesTemperleyLiebLongMoodyJordanObstruction.lean}{formalization of the ambient assertion}
+covers $K_{\rm seed}=0$ and the existence of the length-two chain with
+the path conventions above. The quotient and unboundedness conclusions
+follow from the written argument.
+
+\section{The character-twisted Burau summand}
+
+For the remainder of the paper set
+\[
+ \Tcal_n=\{(a,c):a>0,\ c>0,\ nc+(n+1)a<1\},\qquad
+ q=e^{2\pi ia},\qquad \tau=e^{2\pi ic}.
+\]
+Let $B_j(q)$, $0\le j<n$, be the unreduced Burau matrix on
+$\C^{n+1}$ with local block
+$\left(\begin{smallmatrix}1-q&q\\1&0\end{smallmatrix}\right)$
+at coordinates $j,j+1$ and identity elsewhere. Define
+\[
+ s_i=B_i\ (1\le i<n),\qquad g_1=\tau B_0^2,
+ \qquad g_{j+1}=B_jg_jB_j^{-1}.
+\]
+Write $U_0=(\C^{n+1})^{\oplus n}$ for the resulting ambient module.
+The reduced seed is $V=\ker\ell_q$, where
+$\ell_q(x)=\sum_{j=0}^n q^jx_j$; its integral Laurent basis is
+$b_j=e_j-q^je_0$, $1\le j\le n$. On $V^{\oplus n}$ put
+\[
+ D(v)=\sum_{j=1}^n(g_j-I)v_j,\qquad \Rcal_n=\ker D.
+\]
+On $\Tcal_n$, $g_1-I$ is invertible, so $D$ is surjective and
+$\dim\Rcal_n=n(n-1)$. By \cite[Proposition~5.9]{Negami},
+the map $(\Psi v)_j=v_j-g_{j+1}v_{j+1}$ identifies $\Rcal_n$
+with $V^{\oplus(n-1)}$. Indeed, its kernel is $F(V)$, where
+\[
+ F(v)=(g_2\cdots g_nv,\ldots,g_nv,v),\qquad
+ DF=P_n-I,
+\]
+and $P_n-I$ is invertible on $\Tcal_n$
+\cite[Theorem~5.3 and Remark~5.8]{Negami}.
+In these coordinates the generator is
+\begin{equation}\label{eq:A}
+ (A_iu)_j=
+ \begin{cases}
+ s_i(u_{i-1}+g_iu_i),&j=i-1,\\
+ -s_ig_iu_i,&j=i,\\
+ s_i(u_i+u_{i+1}),&j=i+1,\\
+ s_iu_j,&\text{otherwise},
+ \end{cases}
+\end{equation}
+with nonexistent endpoint rows omitted and all seed operators restricted
+to $V$. For $n=5$, the ambient and reduced dimensions are $30$ and $20$.
+
+\section{A nonzero Laurent minor and generic irreducibility}
+
+For row-major vectorization of a $d\times d$ matrix $X$, the
+commutant system for generators $M_1,\ldots,M_{n-1}$ is
+\begin{equation}\label{eq:C}
+ \mathcal C(M)=\begin{pmatrix}
+ M_1\otimes I_d-I_d\otimes M_1^{\mathsf T}\\
+ \vdots\\
+ M_{n-1}\otimes I_d-I_d\otimes M_{n-1}^{\mathsf T}
+ \end{pmatrix}.
+\end{equation}
+Its kernel is precisely $\End_{B_n}(U)$.
+Write $\mathcal C_5=\mathcal C(S)$ for the $3600\times900$
+ambient system and $\mathcal C^{\rm red}_5=\mathcal C(A)$ for the
+$1600\times400$ reduced system. Their entries belong to
+$\Z[q,q^{-1},\tau]$.
+
+We fix the minors by the following deterministic selection rule.
+Evaluate at $(q,\tau)=(2,3)$ over $\F_{1009}$ and perform forward
+elimination, scanning columns from left to right. In each pivot column,
+choose the first nonzero row at or below the current pivot position,
+swap it into that position, normalize its pivot to one, and eliminate
+entries below. Record the original labels of the pivot rows and the
+pivot columns in their selection order. All initial labels are zero
+based, with rows ordered by generator and then by matrix entry.
+Let $f_5$ and $g_5$ be the determinants of the selected submatrices of
+the Laurent systems $\mathcal C_5$ and $\mathcal C^{\rm red}_5$,
+respectively. The certificate repository at
+\url{https://github.com/the-omega-institute/jtl-seeds-problem68} gives
+their full sparse Laurent matrices as well as the index lists.
+
+\begin{theorem}\label{thm:generic}
+The Laurent polynomial $f_5$ is nonzero. For every
+$(a,c)\in\Tcal_5$ such that
+$f_5(e^{2\pi ia},e^{2\pi ic})\ne0$, the representation $\Rcal_5$
+is irreducible over $\C$. This nonvanishing set is dense and open in
+$\Tcal_5$. The same conclusions hold with $g_5$ in place of $f_5$.
+\end{theorem}
+
+\begin{proof}
+Exact elimination at $(2,3)$ over $\F_{1009}$ gives
+$\rank\mathcal C_5=893$ and the selected determinant $992$.
+Thus $f_5$ cannot be the zero integer Laurent polynomial.
+Its nonvanishing bounds the ambient commutant dimension above by
+$900-893=7$.
+On $\Tcal_5$, \cite[Proposition~5.7]{Negami} gives
+\begin{equation}\label{eq:decomp}
+ U_0\cong\mathbf1^{\oplus2}\oplus\Bur_5(\tau)
+       \oplus\Bur_5(q)\oplus\Rcal_5(q,\tau).
+\end{equation}
+Consequently
+\[
+ \dim\End_{B_5}(U_0)\ge4+1+1+\dim\End_{B_5}(\Rcal_5)\ge7.
+\]
+Equality forces $\End_{B_5}(\Rcal_5)=\C I$.
+For $(a,c)\in\Tcal_5$, choose $l=(1-5c-6a)/2$ and
+$\lambda=e^{2\pi i l}$. Then $0<l<1-5c-6a<1$, so Negami's Theorem~5.3 supplies a
+positive-definite invariant form on the full $30$-dimensional module,
+and Proposition~5.4(1) gives unitarizability without an irreducibility
+hypothesis. The braid matrices in \eqref{eq:S} are independent of this
+choice of $\lambda$.
+Its restriction to $\Rcal_5$ is positive definite. Any invariant
+subspace therefore has an invariant orthogonal complement. A proper
+nonzero invariant subspace would give a nonscalar commuting projection,
+proving the claimed irreducibility.
+
+For the reduced system the exact rank is $399$ and the selected
+determinant is $742$ modulo $1009$. Thus $g_5\ne0$; its nonvanishing
+forces a scalar reduced commutant directly, and the same positive-form
+argument applies. The rational witness $(2,3)$ is used to prove
+nonvanishing, while the irreducibility conclusion is made on $\Tcal_5$.
+
+A nonzero Laurent polynomial cannot vanish on an open patch of the
+parameter torus. Its restriction is a real analytic finite Fourier
+sum; vanishing on a patch would force vanishing on the torus and then
+all coefficients to be zero. Hence each nonvanishing set is dense and
+open in $\Tcal_5$.
+\end{proof}
+
+For comparison with \cite[Proposition~5.10]{Negami}, the table gives
+the exact ranks and nullities at $(2,3)$ over $\F_{1009}$ and the
+selected determinant residues there and at $(5,7)$ over $\F_{1019}$.
+\begin{center}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Module & Dimension & Rank & Nullity & $\F_{1009}$ & $\F_{1019}$\\
+\midrule
+$U_0$, $n=3$ & 12 & 137 & 7 & 786 & 18\\
+$U_0$, $n=4$ & 20 & 393 & 7 & 962 & 38\\
+$U_0$, $n=5$ & 30 & 893 & 7 & 992 & 393\\
+$\Rcal_5$ & 20 & 399 & 1 & 742 & 471\\
+\bottomrule
+\end{tabular}
+\end{center}
+The $n=3,4$ rows reproduce the earlier certificate values; the $n=5$
+rows supply the new generic irreducibility certificates.
+
+\section{The diagonal splitting and factors of the minors}
+
+Write $[m]_q=1+q+\cdots+q^{m-1}$.
+An exact polynomial commuting operator gives the following splitting.
+
+\begin{lemma}\label{lem:K}
+There is a matrix $K(q)\in\operatorname{Mat}_{20}(\Z[q])$,
+of entry degree at most eleven, such that
+\begin{equation}\label{eq:K}
+ [K,A_i(q,q)]=0\ (1\le i\le4),\qquad
+ K^2=q[6]_q^2I,\qquad \tr K=0,
+\end{equation}
+and, in zero-based indices, $K_{1,0}=q[3]_q$.
+\end{lemma}
+
+\begin{proof}
+Here is a finite specification of $K$ using the matrices in
+\eqref{eq:A}. For each integer $v=2,\ldots,13$, solve the rational
+commutant equations for $A_i(v,v)$, together with
+$\tr K_v=0$ and $(K_v)_{1,0}=v[3]_v$.
+These systems have unique solutions. Define
+\begin{equation}\label{eq:interp}
+ K(q)=\sum_{v=2}^{13}K_v
+       \prod_{\substack{2\le w\le13\\w\ne v}}\frac{q-w}{v-w}.
+\end{equation}
+The resulting entries have integer coefficients. Expansion of the
+four commutators, the square residual, the trace, and the specified
+entry verifies \eqref{eq:K} coefficient by coefficient over
+$\Z[q,q^{-1}]$. The certificate records every entry of $K$.
+For completeness, the reduced commutant rank at each of the twelve
+interpolation points is $398$ modulo $1019$. This gives rational
+commutant dimension at most two; $I$ and the verified $K(v)$ give
+the reverse bound. Since $K(v)$ has trace zero and prescribed nonzero
+entry, it is the unique normalized solution used in \eqref{eq:interp}.
+Thus interpolation specifies the candidate, and the polynomial
+identities establish the assertion for all $q$.
+\end{proof}
+
+\begin{theorem}\label{thm:diagonal}
+For every $0<a<1/11$, at $q=\tau=e^{2\pi ia}$,
+\[
+ \Rcal_5=W_+\oplus W_-,\qquad \dim W_+=\dim W_-=10.
+\]
+These invariant subspaces are the images, in the coordinates of
+\eqref{eq:A}, of
+\begin{equation}\label{eq:projectors}
+ E_\pm=\frac12\left(I\pm\frac{K(q)}{q^{1/2}[6]_q}\right),
+ \qquad q^{1/2}=e^{\pi ia}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The admissible diagonal in $\Tcal_5$ is exactly $0<a<1/11$.
+Here $q\ne1$ and $0<6a<1$, so $[6]_q=(q^6-1)/(q-1)\ne0$.
+Equation~\eqref{eq:K} gives complementary idempotents:
+$E_\pm^2=E_\pm$, $E_+E_-=0$, and $E_++E_-=I$.
+They commute with all generators. Their traces, hence their ranks,
+are ten. Their images are the required invariant summands.
+The isomorphism $\Psi|_{\ker D}$ transfers them to the augmentation
+kernel.
+\end{proof}
+
+\begin{proposition}\label{prop:factor}
+Every minor of order $893$ of $\mathcal C_5$ is divisible by
+$(\tau-q)^3$ in $\Z[q,q^{-1},\tau]$. Every minor of order $399$
+of $\mathcal C^{\rm red}_5$ is divisible by $\tau-q$.
+\end{proposition}
+
+\begin{proof}
+On the admissible diagonal the two Burau summands in
+\eqref{eq:decomp} are isomorphic, and scalar maps between the two
+copies give four independent endomorphisms. The two trivial copies
+give four more, and $E_+,E_-$ give two. Hence the ambient commutant
+has dimension at least ten and the reduced commutant at least two.
+Their ranks are at most $890$ and $398$, respectively.
+The admissible arc is Zariski dense in the curve $\tau=q$, so these
+rank bounds hold over $\Q(q)$ after setting $\tau=q$.
+
+Localize $\Q(q)[\tau]$ at $\tau-q$. A square submatrix of order
+$893$ whose reduction has rank at most $890$ has at least three
+invariant factors divisible by the uniformizer $\tau-q$. Its
+determinant is therefore divisible by the cube. The reduced argument
+uses orders $399$ and $398$. Finally, division by the monic polynomial
+$(\tau-q)^3$ over $\Z[q,q^{-1}]$ has a remainder of degree less
+than three in $\tau$. Its image in $\Q(q)[\tau]$ is zero, so the
+remainder is zero. Division by $\tau-q$ gives the reduced assertion.
+\end{proof}
+
+\section{Exact cyclotomic points and the remaining questions}
+
+Consider all $102$ points
+\[
+ (a,c)=(j/84,k/84),\qquad j,k>0,\qquad 6j+5k<84.
+\]
+Set $\zeta=e^{2\pi i/84}$. The map $\zeta\mapsto527\in\F_{1009}$
+defines a homomorphism $\Z[\zeta]\to\F_{1009}$, since
+$\Phi_{84}(527)=0$ modulo $1009$.
+The element $527$ has order $84$: its $84$th power is one, while
+its powers $84/r$ for $r=2,3,7$ are not one.
+Thus a nonzero reduced minor after this map certifies a nonzero
+cyclotomic minor in characteristic zero.
+
+At all $95$ off-diagonal points, $g_5$ has nonzero image modulo
+$1009$, proving irreducibility over $\C$ by
+Theorem~\ref{thm:generic}. At the seven diagonal points
+$j=k=1,\ldots,7$, the reduced modular rank is $398$.
+The modular rank bounds the complex commutant dimension above by two;
+$I$ and $K$ give two independent complex endomorphisms.
+Its dimension is therefore exactly two. Complete reducibility makes
+this dimension the sum of squares of irreducible multiplicities.
+Together with the invariant $10+10$ splitting, this proves that
+$W_+$ and $W_-$ are irreducible and inequivalent at these seven points.
+At $j=k=1$ the ambient modular rank is $890$, so its generic rank
+along the diagonal is exactly $890$.
+
+The verifier selects an order-$398$ minor of the full reduced commutant
+system at $q=\tau=2$ over $\F_{1019}$, restricts it to $\tau=q$, and
+checks its determinant at $q=2$ exactly over $\Z$. This gives a nonzero
+univariate Laurent polynomial $h(q)$. Whenever $h(q)\ne0$, the reduced
+commutant has dimension two by the same $I,K$ argument, so complete
+reducibility gives the corresponding conclusion for $W_+$ and $W_-.$
+
+The exact finite computations supporting the paper are the commutant
+ranks and selected determinant residues, the Laurent coefficient
+identities in Lemma~\ref{lem:K} and \eqref{eq:chain}, and the
+cyclotomic reductions at the stated points. The Jordan obstruction
+is uniform in $n,\ell$ and the sector; it follows from the local
+construction, without a finite sector scan. For the Burau family,
+the certificates prove irreducibility on
+$\{f_5\ne0\}\cap\Tcal_5$ and $\{g_5\ne0\}\cap\Tcal_5$,
+and the polynomial projectors prove reducibility along the entire
+admissible diagonal.
+
+The complete exceptional locus away from the diagonal, the residual
+factors and their exact multiplicities, and the image-closure and
+$\mathrm{SU}(20)$ questions in \cite[Problem~6.8]{Negami} remain open.
+A zero of one selected minor alone does not imply reducibility. Since
+$h(q)$ has only finitely many roots, $W_+$ and $W_-$ are irreducible
+and inequivalent at all but finitely many admissible diagonal points;
+the complete exceptional diagonal set remains undetermined.
+
+\section*{Data availability}
+
+The exact certificates and reproduction programs are available at
+\url{https://github.com/the-omega-institute/jtl-seeds-problem68}.
+
+\section*{Use of AI tools}
+
+We used an AI orchestration system built on OpenAI's ChatGPT and Codex
+and Anthropic's Claude. AI agents searched for proofs and counterexamples,
+ran computations, and produced the Lean formalization of the ambient
+Jordan obstruction. Separate ChatGPT and Codex runs double-checked
+the arguments and computations; Claude coordinated the work.
+AI tools also assisted in preparing this manuscript.
+
+\begin{thebibliography}{1}
+\bibitem{Negami}
+Haru Negami,
+\emph{Quantum gates from the middle convolution of twisted Burau
+representations}, arXiv:2610.00293v1 (2026).
+\url{https://arxiv.org/abs/2610.00293v1}.
+\end{thebibliography}
+\end{document}

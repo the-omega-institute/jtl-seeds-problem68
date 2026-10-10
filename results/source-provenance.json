@@ -1,0 +1,18 @@
+{
+  "verified_on": "2026-10-10",
+  "paper": {
+    "author": "Haru Negami",
+    "title": "Quantum gates from the middle convolution of twisted Burau representations",
+    "arxiv": "2610.00293v1",
+    "date": "2026-09-25",
+    "pdf_sha256": "08184dbb8ac91cdc121be7c13c0f1a5b0a0dde573f7fa84eaeef2391c9d62308"
+  },
+  "formalization": {
+    "url": "https://raw.githubusercontent.com/the-omega-institute/trureturing/868ae8ef94f515b39323d972ccfd7120036bff79/D5/S3/Quantum/Algebra/JonesTemperleyLiebLongMoodyJordanObstruction.lean",
+    "revision": "868ae8ef94f515b39323d972ccfd7120036bff79",
+    "source_sha256": "8a19bda40aa77207385a58b2c1140617888ded05d36526e9b052bf92ded4bd44",
+    "statement": "result : claim",
+    "scope": "seed fixed-vector vanishing and ambient length-two Jordan chain",
+    "fresh_Lean_build": false
+  }
+}

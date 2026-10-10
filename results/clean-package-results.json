@@ -1,0 +1,78 @@
+{
+  "clean_archive_extraction": true,
+  "fresh_venv_install": true,
+  "manifest_verified": true,
+  "default_suite_passed": true,
+  "standalone_two_pass_LaTeX_build": true,
+  "PDF_text_matches_final": true,
+  "single_computation_process": true,
+  "cumulative_child_peak_rss_bytes": 214384640,
+  "commands": [
+    {
+      "command": [
+        "shasum",
+        "-a",
+        "256",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-u",
+        "computation/run_suite.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "note.tex"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "note.tex"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "note.pdf",
+        "results/note-text.txt"
+      ],
+      "returncode": 0
+    }
+  ],
+  "all_six_rendered_pages_match_final": true
+}

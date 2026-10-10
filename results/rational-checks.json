@@ -1,0 +1,43 @@
+[
+  {
+    "n": 3,
+    "q": 2,
+    "tau": 3,
+    "dimension": 6,
+    "rank_Q": 35,
+    "nullity_Q": 1,
+    "exact_intertwining_and_braid_checks": true,
+    "seconds": 0.009
+  },
+  {
+    "n": 4,
+    "q": 2,
+    "tau": 3,
+    "dimension": 12,
+    "rank_Q": 143,
+    "nullity_Q": 1,
+    "exact_intertwining_and_braid_checks": true,
+    "seconds": 0.053
+  },
+  {
+    "n": 5,
+    "q": 2,
+    "tau": 3,
+    "dimension": 20,
+    "rank_Q": 399,
+    "nullity_Q": 1,
+    "exact_intertwining_and_braid_checks": true,
+    "seconds": 0.401
+  },
+  {
+    "n": 5,
+    "q": 2,
+    "tau": 2,
+    "dimension": 20,
+    "rank_Q": 398,
+    "nullity_Q": 2,
+    "exact_intertwining_and_braid_checks": true,
+    "seconds": 0.407
+  }
+]
+ 

@@ -1,0 +1,78 @@
+{
+  "python": "3.14.4",
+  "platform": "Darwin",
+  "mode": "regenerate",
+  "single_computation_process": true,
+  "rss_limit_bytes": 1500000000,
+  "commands": [
+    {
+      "script": "compute.py",
+      "arguments": [
+        "--mode",
+        "main"
+      ],
+      "returncode": 0,
+      "seconds": 7.773,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "exact_check.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 1.177,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "diagonal_symbolic.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 7.203,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "lift_certificate.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 1.145,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "sample_torus.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 17.346,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "verify_certificates.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 0.841,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "verify_n5.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 23.279,
+      "cumulative_child_peak_rss_bytes": 218218496
+    },
+    {
+      "script": "verify_jordan.py",
+      "arguments": [],
+      "returncode": 0,
+      "seconds": 0.399,
+      "cumulative_child_peak_rss_bytes": 218218496
+    }
+  ],
+  "certificate_sha256": {
+    "diagonal-polynomial.json": "ca41914e2aef9e341ee8fe44418bd78e6bbea836d0e07ad405cf38212620f707",
+    "f3-laurent-matrix.json": "921c3689226ac16dbbf2a50ad63cf932068336754a163735f485ec3bdf686556",
+    "f4-laurent-matrix.json": "6891527d5089d0276c40b33425fb4fd7b759f1ec16e3704f715488a1cfe4d27e",
+    "f5-laurent-matrix.json": "2bc76ddf37cd005fd6e8ae04c323cafbe3f785c4007118d89cde8efecba6eed2",
+    "g5-laurent-matrix.json": "6478a30e109d4f798e2a218c3343c79a0d00daa63889915e9b5db941e402babb",
+    "jordan-laurent.json": "aec74350b0619839c7a25d0d346f0bd01eb09d4e8fc139e6cace5ba38f3dda4f",
+    "main-ranks.json": "3a12f02c7573cd1633d0bfc25f0ddd48d3cf1ae259e2073784ba9c25369bd927",
+    "torus-grid.json": "e0320d18739ee84f08c9f95122c8fec8fdfb7e33bb4ca2b30fbc7cbc6b933863"
+  }
+}

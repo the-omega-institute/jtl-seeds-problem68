@@ -1,0 +1,1243 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "flint": "0.9.0"
+  },
+  "construction": "Rebuilt symbolically from paper definitions, separately from generation scripts.",
+  "ranks": [
+    {
+      "n": 3,
+      "reduced": false,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "dimension": 12,
+      "rank": 137,
+      "nullity": 7
+    },
+    {
+      "n": 3,
+      "reduced": true,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "dimension": 6,
+      "rank": 35,
+      "nullity": 1
+    },
+    {
+      "n": 3,
+      "reduced": false,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "dimension": 12,
+      "rank": 137,
+      "nullity": 7
+    },
+    {
+      "n": 3,
+      "reduced": true,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "dimension": 6,
+      "rank": 35,
+      "nullity": 1
+    },
+    {
+      "n": 3,
+      "reduced": false,
+      "q": 7,
+      "tau": 11,
+      "prime": 1019,
+      "dimension": 12,
+      "rank": 137,
+      "nullity": 7
+    },
+    {
+      "n": 3,
+      "reduced": true,
+      "q": 7,
+      "tau": 11,
+      "prime": 1019,
+      "dimension": 6,
+      "rank": 35,
+      "nullity": 1
+    },
+    {
+      "n": 4,
+      "reduced": false,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "dimension": 20,
+      "rank": 393,
+      "nullity": 7
+    },
+    {
+      "n": 4,
+      "reduced": true,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "dimension": 12,
+      "rank": 143,
+      "nullity": 1
+    },
+    {
+      "n": 4,
+      "reduced": false,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "dimension": 20,
+      "rank": 393,
+      "nullity": 7
+    },
+    {
+      "n": 4,
+      "reduced": true,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "dimension": 12,
+      "rank": 143,
+      "nullity": 1
+    },
+    {
+      "n": 4,
+      "reduced": false,
+      "q": 7,
+      "tau": 11,
+      "prime": 1019,
+      "dimension": 20,
+      "rank": 393,
+      "nullity": 7
+    },
+    {
+      "n": 4,
+      "reduced": true,
+      "q": 7,
+      "tau": 11,
+      "prime": 1019,
+      "dimension": 12,
+      "rank": 143,
+      "nullity": 1
+    },
+    {
+      "n": 5,
+      "reduced": false,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "dimension": 30,
+      "rank": 893,
+      "nullity": 7
+    },
+    {
+      "n": 5,
+      "reduced": true,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "dimension": 20,
+      "rank": 399,
+      "nullity": 1
+    },
+    {
+      "n": 5,
+      "reduced": false,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "dimension": 30,
+      "rank": 893,
+      "nullity": 7
+    },
+    {
+      "n": 5,
+      "reduced": true,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "dimension": 20,
+      "rank": 399,
+      "nullity": 1
+    },
+    {
+      "n": 5,
+      "reduced": false,
+      "q": 7,
+      "tau": 11,
+      "prime": 1019,
+      "dimension": 30,
+      "rank": 893,
+      "nullity": 7
+    },
+    {
+      "n": 5,
+      "reduced": true,
+      "q": 7,
+      "tau": 11,
+      "prime": 1019,
+      "dimension": 20,
+      "rank": 399,
+      "nullity": 1
+    }
+  ],
+  "minors": [
+    {
+      "name": "f3",
+      "size": 137,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "determinant": 786,
+      "symbolic_matrix_match": true,
+      "sha256": "921c3689226ac16dbbf2a50ad63cf932068336754a163735f485ec3bdf686556"
+    },
+    {
+      "name": "f3",
+      "size": 137,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "determinant": 18,
+      "symbolic_matrix_match": true,
+      "sha256": "921c3689226ac16dbbf2a50ad63cf932068336754a163735f485ec3bdf686556"
+    },
+    {
+      "name": "f4",
+      "size": 393,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "determinant": 962,
+      "symbolic_matrix_match": true,
+      "sha256": "6891527d5089d0276c40b33425fb4fd7b759f1ec16e3704f715488a1cfe4d27e"
+    },
+    {
+      "name": "f4",
+      "size": 393,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "determinant": 38,
+      "symbolic_matrix_match": true,
+      "sha256": "6891527d5089d0276c40b33425fb4fd7b759f1ec16e3704f715488a1cfe4d27e"
+    },
+    {
+      "name": "f5",
+      "size": 893,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "determinant": 992,
+      "symbolic_matrix_match": true,
+      "sha256": "2bc76ddf37cd005fd6e8ae04c323cafbe3f785c4007118d89cde8efecba6eed2"
+    },
+    {
+      "name": "f5",
+      "size": 893,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "determinant": 393,
+      "symbolic_matrix_match": true,
+      "sha256": "2bc76ddf37cd005fd6e8ae04c323cafbe3f785c4007118d89cde8efecba6eed2"
+    },
+    {
+      "name": "g5",
+      "size": 399,
+      "q": 2,
+      "tau": 3,
+      "prime": 1009,
+      "determinant": 742,
+      "symbolic_matrix_match": true,
+      "sha256": "6478a30e109d4f798e2a218c3343c79a0d00daa63889915e9b5db941e402babb"
+    },
+    {
+      "name": "g5",
+      "size": 399,
+      "q": 5,
+      "tau": 7,
+      "prime": 1019,
+      "determinant": 471,
+      "symbolic_matrix_match": true,
+      "sha256": "6478a30e109d4f798e2a218c3343c79a0d00daa63889915e9b5db941e402babb"
+    }
+  ],
+  "symbolic": {
+    "seed_invariance_Psi_D_DF": true,
+    "K_commutators_square_trace_normalization_degree": true
+  },
+  "diagonal_exact": [
+    {
+      "q": 4,
+      "tau": 4,
+      "field": "Q",
+      "W_plus_dimension": 10,
+      "W_minus_dimension": 10,
+      "invariant": true,
+      "complementary": true,
+      "idempotents": true
+    },
+    {
+      "q": 9,
+      "tau": 9,
+      "field": "Q",
+      "W_plus_dimension": 10,
+      "W_minus_dimension": 10,
+      "invariant": true,
+      "complementary": true,
+      "idempotents": true
+    },
+    {
+      "q": 16,
+      "tau": 16,
+      "field": "Q",
+      "W_plus_dimension": 10,
+      "W_minus_dimension": 10,
+      "invariant": true,
+      "complementary": true,
+      "idempotents": true
+    },
+    {
+      "q": 25,
+      "tau": 25,
+      "field": "Q",
+      "W_plus_dimension": 10,
+      "W_minus_dimension": 10,
+      "invariant": true,
+      "complementary": true,
+      "idempotents": true
+    }
+  ],
+  "grid": [
+    {
+      "j": 1,
+      "k": 1,
+      "q": 527,
+      "tau": 527,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 1,
+      "k": 2,
+      "q": 527,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 164
+    },
+    {
+      "j": 1,
+      "k": 3,
+      "q": 527,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 874
+    },
+    {
+      "j": 1,
+      "k": 4,
+      "q": 527,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 189
+    },
+    {
+      "j": 1,
+      "k": 5,
+      "q": 527,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 515
+    },
+    {
+      "j": 1,
+      "k": 6,
+      "q": 527,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 512
+    },
+    {
+      "j": 1,
+      "k": 7,
+      "q": 527,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 772
+    },
+    {
+      "j": 1,
+      "k": 8,
+      "q": 527,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 754
+    },
+    {
+      "j": 1,
+      "k": 9,
+      "q": 527,
+      "tau": 280,
+      "rank": 399,
+      "determinant": 1
+    },
+    {
+      "j": 1,
+      "k": 10,
+      "q": 527,
+      "tau": 246,
+      "rank": 399,
+      "determinant": 995
+    },
+    {
+      "j": 1,
+      "k": 11,
+      "q": 527,
+      "tau": 490,
+      "rank": 399,
+      "determinant": 124
+    },
+    {
+      "j": 1,
+      "k": 12,
+      "q": 527,
+      "tau": 935,
+      "rank": 399,
+      "determinant": 650
+    },
+    {
+      "j": 1,
+      "k": 13,
+      "q": 527,
+      "tau": 353,
+      "rank": 399,
+      "determinant": 972
+    },
+    {
+      "j": 1,
+      "k": 14,
+      "q": 527,
+      "tau": 375,
+      "rank": 399,
+      "determinant": 402
+    },
+    {
+      "j": 1,
+      "k": 15,
+      "q": 527,
+      "tau": 870,
+      "rank": 399,
+      "determinant": 396
+    },
+    {
+      "j": 2,
+      "k": 1,
+      "q": 254,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 143
+    },
+    {
+      "j": 2,
+      "k": 2,
+      "q": 254,
+      "tau": 254,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 2,
+      "k": 3,
+      "q": 254,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 483
+    },
+    {
+      "j": 2,
+      "k": 4,
+      "q": 254,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 562
+    },
+    {
+      "j": 2,
+      "k": 5,
+      "q": 254,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 481
+    },
+    {
+      "j": 2,
+      "k": 6,
+      "q": 254,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 233
+    },
+    {
+      "j": 2,
+      "k": 7,
+      "q": 254,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 957
+    },
+    {
+      "j": 2,
+      "k": 8,
+      "q": 254,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 356
+    },
+    {
+      "j": 2,
+      "k": 9,
+      "q": 254,
+      "tau": 280,
+      "rank": 399,
+      "determinant": 601
+    },
+    {
+      "j": 2,
+      "k": 10,
+      "q": 254,
+      "tau": 246,
+      "rank": 399,
+      "determinant": 346
+    },
+    {
+      "j": 2,
+      "k": 11,
+      "q": 254,
+      "tau": 490,
+      "rank": 399,
+      "determinant": 142
+    },
+    {
+      "j": 2,
+      "k": 12,
+      "q": 254,
+      "tau": 935,
+      "rank": 399,
+      "determinant": 771
+    },
+    {
+      "j": 2,
+      "k": 13,
+      "q": 254,
+      "tau": 353,
+      "rank": 399,
+      "determinant": 126
+    },
+    {
+      "j": 2,
+      "k": 14,
+      "q": 254,
+      "tau": 375,
+      "rank": 399,
+      "determinant": 995
+    },
+    {
+      "j": 3,
+      "k": 1,
+      "q": 670,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 794
+    },
+    {
+      "j": 3,
+      "k": 2,
+      "q": 670,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 156
+    },
+    {
+      "j": 3,
+      "k": 3,
+      "q": 670,
+      "tau": 670,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 3,
+      "k": 4,
+      "q": 670,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 407
+    },
+    {
+      "j": 3,
+      "k": 5,
+      "q": 670,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 744
+    },
+    {
+      "j": 3,
+      "k": 6,
+      "q": 670,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 18
+    },
+    {
+      "j": 3,
+      "k": 7,
+      "q": 670,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 545
+    },
+    {
+      "j": 3,
+      "k": 8,
+      "q": 670,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 344
+    },
+    {
+      "j": 3,
+      "k": 9,
+      "q": 670,
+      "tau": 280,
+      "rank": 399,
+      "determinant": 297
+    },
+    {
+      "j": 3,
+      "k": 10,
+      "q": 670,
+      "tau": 246,
+      "rank": 399,
+      "determinant": 800
+    },
+    {
+      "j": 3,
+      "k": 11,
+      "q": 670,
+      "tau": 490,
+      "rank": 399,
+      "determinant": 32
+    },
+    {
+      "j": 3,
+      "k": 12,
+      "q": 670,
+      "tau": 935,
+      "rank": 399,
+      "determinant": 282
+    },
+    {
+      "j": 3,
+      "k": 13,
+      "q": 670,
+      "tau": 353,
+      "rank": 399,
+      "determinant": 373
+    },
+    {
+      "j": 4,
+      "k": 1,
+      "q": 949,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 315
+    },
+    {
+      "j": 4,
+      "k": 2,
+      "q": 949,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 422
+    },
+    {
+      "j": 4,
+      "k": 3,
+      "q": 949,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 136
+    },
+    {
+      "j": 4,
+      "k": 4,
+      "q": 949,
+      "tau": 949,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 4,
+      "k": 5,
+      "q": 949,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 477
+    },
+    {
+      "j": 4,
+      "k": 6,
+      "q": 949,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 952
+    },
+    {
+      "j": 4,
+      "k": 7,
+      "q": 949,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 163
+    },
+    {
+      "j": 4,
+      "k": 8,
+      "q": 949,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 401
+    },
+    {
+      "j": 4,
+      "k": 9,
+      "q": 949,
+      "tau": 280,
+      "rank": 399,
+      "determinant": 24
+    },
+    {
+      "j": 4,
+      "k": 10,
+      "q": 949,
+      "tau": 246,
+      "rank": 399,
+      "determinant": 937
+    },
+    {
+      "j": 4,
+      "k": 11,
+      "q": 949,
+      "tau": 490,
+      "rank": 399,
+      "determinant": 95
+    },
+    {
+      "j": 5,
+      "k": 1,
+      "q": 668,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 690
+    },
+    {
+      "j": 5,
+      "k": 2,
+      "q": 668,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 553
+    },
+    {
+      "j": 5,
+      "k": 3,
+      "q": 668,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 359
+    },
+    {
+      "j": 5,
+      "k": 4,
+      "q": 668,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 422
+    },
+    {
+      "j": 5,
+      "k": 5,
+      "q": 668,
+      "tau": 668,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 5,
+      "k": 6,
+      "q": 668,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 713
+    },
+    {
+      "j": 5,
+      "k": 7,
+      "q": 668,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 653
+    },
+    {
+      "j": 5,
+      "k": 8,
+      "q": 668,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 667
+    },
+    {
+      "j": 5,
+      "k": 9,
+      "q": 668,
+      "tau": 280,
+      "rank": 399,
+      "determinant": 953
+    },
+    {
+      "j": 5,
+      "k": 10,
+      "q": 668,
+      "tau": 246,
+      "rank": 399,
+      "determinant": 951
+    },
+    {
+      "j": 6,
+      "k": 1,
+      "q": 904,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 825
+    },
+    {
+      "j": 6,
+      "k": 2,
+      "q": 904,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 688
+    },
+    {
+      "j": 6,
+      "k": 3,
+      "q": 904,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 215
+    },
+    {
+      "j": 6,
+      "k": 4,
+      "q": 904,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 716
+    },
+    {
+      "j": 6,
+      "k": 5,
+      "q": 904,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 856
+    },
+    {
+      "j": 6,
+      "k": 6,
+      "q": 904,
+      "tau": 904,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 6,
+      "k": 7,
+      "q": 904,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 547
+    },
+    {
+      "j": 6,
+      "k": 8,
+      "q": 904,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 36
+    },
+    {
+      "j": 6,
+      "k": 9,
+      "q": 904,
+      "tau": 280,
+      "rank": 399,
+      "determinant": 394
+    },
+    {
+      "j": 7,
+      "k": 1,
+      "q": 160,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 801
+    },
+    {
+      "j": 7,
+      "k": 2,
+      "q": 160,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 833
+    },
+    {
+      "j": 7,
+      "k": 3,
+      "q": 160,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 575
+    },
+    {
+      "j": 7,
+      "k": 4,
+      "q": 160,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 572
+    },
+    {
+      "j": 7,
+      "k": 5,
+      "q": 160,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 145
+    },
+    {
+      "j": 7,
+      "k": 6,
+      "q": 160,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 258
+    },
+    {
+      "j": 7,
+      "k": 7,
+      "q": 160,
+      "tau": 160,
+      "rank": 398,
+      "determinant": 0
+    },
+    {
+      "j": 7,
+      "k": 8,
+      "q": 160,
+      "tau": 573,
+      "rank": 399,
+      "determinant": 203
+    },
+    {
+      "j": 8,
+      "k": 1,
+      "q": 573,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 946
+    },
+    {
+      "j": 8,
+      "k": 2,
+      "q": 573,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 461
+    },
+    {
+      "j": 8,
+      "k": 3,
+      "q": 573,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 818
+    },
+    {
+      "j": 8,
+      "k": 4,
+      "q": 573,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 617
+    },
+    {
+      "j": 8,
+      "k": 5,
+      "q": 573,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 436
+    },
+    {
+      "j": 8,
+      "k": 6,
+      "q": 573,
+      "tau": 904,
+      "rank": 399,
+      "determinant": 841
+    },
+    {
+      "j": 8,
+      "k": 7,
+      "q": 573,
+      "tau": 160,
+      "rank": 399,
+      "determinant": 275
+    },
+    {
+      "j": 9,
+      "k": 1,
+      "q": 280,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 285
+    },
+    {
+      "j": 9,
+      "k": 2,
+      "q": 280,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 816
+    },
+    {
+      "j": 9,
+      "k": 3,
+      "q": 280,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 820
+    },
+    {
+      "j": 9,
+      "k": 4,
+      "q": 280,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 398
+    },
+    {
+      "j": 9,
+      "k": 5,
+      "q": 280,
+      "tau": 668,
+      "rank": 399,
+      "determinant": 166
+    },
+    {
+      "j": 10,
+      "k": 1,
+      "q": 246,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 652
+    },
+    {
+      "j": 10,
+      "k": 2,
+      "q": 246,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 345
+    },
+    {
+      "j": 10,
+      "k": 3,
+      "q": 246,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 660
+    },
+    {
+      "j": 10,
+      "k": 4,
+      "q": 246,
+      "tau": 949,
+      "rank": 399,
+      "determinant": 582
+    },
+    {
+      "j": 11,
+      "k": 1,
+      "q": 490,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 262
+    },
+    {
+      "j": 11,
+      "k": 2,
+      "q": 490,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 723
+    },
+    {
+      "j": 11,
+      "k": 3,
+      "q": 490,
+      "tau": 670,
+      "rank": 399,
+      "determinant": 973
+    },
+    {
+      "j": 12,
+      "k": 1,
+      "q": 935,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 527
+    },
+    {
+      "j": 12,
+      "k": 2,
+      "q": 935,
+      "tau": 254,
+      "rank": 399,
+      "determinant": 722
+    },
+    {
+      "j": 13,
+      "k": 1,
+      "q": 353,
+      "tau": 527,
+      "rank": 399,
+      "determinant": 723
+    }
+  ],
+  "interpolation_points": [
+    {
+      "q": 2,
+      "tau": 2,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 3,
+      "tau": 3,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 4,
+      "tau": 4,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 5,
+      "tau": 5,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 6,
+      "tau": 6,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 7,
+      "tau": 7,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 8,
+      "tau": 8,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 9,
+      "tau": 9,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 10,
+      "tau": 10,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 11,
+      "tau": 11,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 12,
+      "tau": 12,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    },
+    {
+      "q": 13,
+      "tau": 13,
+      "prime": 1019,
+      "rank": 398,
+      "rational_commutant_dimension": 2
+    }
+  ],
+  "diagonal_reduced_minor": {
+    "size": 398,
+    "source": "full reduced commutant system",
+    "restriction": "tau=q",
+    "selection_prime": 1019,
+    "selection_q": 2,
+    "exact_evaluation_q": 2,
+    "exact_integer_determinant_nonzero": true
+  },
+  "diagonal_ambient_rank": {
+    "q": 527,
+    "tau": 527,
+    "prime": 1009,
+    "rank": 890
+  },
+  "cyclotomic_map": {
+    "order": 84,
+    "image": 527,
+    "prime": 1009,
+    "phi84_vanishes": true
+  },
+  "n2_original_rank": 28
+}

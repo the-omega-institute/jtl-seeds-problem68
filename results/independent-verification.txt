@@ -1,0 +1,1 @@
+PASS: Laurent minor entries and determinants at both primes; diagonal identities by independent integer Laurent arithmetic; exact nonzero order-398 diagonal minor witness.

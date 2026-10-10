@@ -1,0 +1,12 @@
+{
+  "coefficient_ring": "Z[alpha,alpha^-1]",
+  "local_seed_polynomials": true,
+  "local_Temperley_Lieb_squares": true,
+  "local_braid_relation": true,
+  "ambient_block_reconstructed": true,
+  "seed_square_polynomials": true,
+  "shift_w_equals_v": true,
+  "shift_v_equals_zero": true,
+  "nonzero_witness_coordinate": "alpha^6-1",
+  "scope": "Exact universal local identities; the uniform path existence, phase nonvanishing, quotient injection and norm argument are proved in the paper."
+}
